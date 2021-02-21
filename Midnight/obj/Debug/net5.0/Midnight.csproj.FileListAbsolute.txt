@@ -1,0 +1,16 @@
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\Midnight.exe
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\Midnight.deps.json
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\Midnight.runtimeconfig.json
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\Midnight.runtimeconfig.dev.json
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\Midnight.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\ref\Midnight.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\Midnight.pdb
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\obj\Debug\net5.0\Midnight.csprojAssemblyReference.cache
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\obj\Debug\net5.0\Midnight.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\obj\Debug\net5.0\Midnight.AssemblyInfoInputs.cache
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\obj\Debug\net5.0\Midnight.AssemblyInfo.cs
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\obj\Debug\net5.0\Midnight.csproj.CoreCompileInputs.cache
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\obj\Debug\net5.0\Midnight.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\obj\Debug\net5.0\ref\Midnight.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\obj\Debug\net5.0\Midnight.pdb
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\obj\Debug\net5.0\Midnight.genruntimeconfig.cache
