@@ -103,3 +103,4 @@ c:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\obj\Debug\net5.0\M
 c:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\NetCoreServer.dll
 c:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\System.CommandLine.dll
 c:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\YamlDotNet.dll
+c:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\Midnight.exe
