@@ -5,7 +5,7 @@ using System.Net.Sockets;
 using System.Text;
 using NetCoreServer;
 
-namespace HttpServer
+namespace Midnight.Core.Server
 {
     public class CommonCache
     {
@@ -83,7 +83,7 @@ namespace HttpServer
                     SendResponseAsync(Response.MakeGetResponse(value));
                 }
                 else
-                    SendResponseAsync(Response.MakeErrorResponse("Required cache value was not found for the key: " + key, 404));
+                    SendResponseAsync(Response.MakeErrorResponse("Required cache value was not found for the key: " + key, "404"));
             }
             else if ((request.Method == "POST") || (request.Method == "PUT"))
             {
@@ -117,7 +117,7 @@ namespace HttpServer
                     SendResponseAsync(Response.MakeGetResponse(value));
                 }
                 else
-                    SendResponseAsync(Response.MakeErrorResponse("Deleted cache value was not found for the key: " + key, 404));
+                    SendResponseAsync(Response.MakeErrorResponse("Deleted cache value was not found for the key: " + key, "404"));
             }
             else if (request.Method == "OPTIONS")
                 SendResponseAsync(Response.MakeOptionsResponse());
