@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZYOOFySofGihSgRdwA7WAmzvxnlmD85ZuqT36iu2TBXEhqSt9xh/8Cd1+vFIQYb/C5oCltDDB+hHFri5S0s5+g==",
+  "dgSpecHash": "BzDlMCGnLXtPt2Y/0JJs8qcW/1x4R/nGcWV5Sge8xwmL6tOBi/2POx02kGhE0x3Ux+R20nO/iP9AOwownBUJ0w==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight.Tests\\Midnight.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight.Tests\\Midnight.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Red\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\Red\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",
