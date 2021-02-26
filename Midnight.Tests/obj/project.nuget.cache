@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iyJGpJefequeLCEpzlIOCapOhhrcIzOKlvWx6wPkossAsXmnqRHempfuBdDYZ7fFjZgxHM4usEqd6vEn6uGyJQ==",
+  "dgSpecHash": "9KoBSteKvGWgyopytw+SlhbVMQZWXjnq87GLMwN0oEatxh78gPqRyTUYnf84thsB16qJPV1Rq1+TBzDo7deYiA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight.Tests\\Midnight.Tests.csproj",
+  "projectFilePath": "c:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight.Tests\\Midnight.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Red\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\Red\\.nuget\\packages\\fluentassertions\\5.10.3\\fluentassertions.5.10.3.nupkg.sha512",

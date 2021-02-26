@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Wvd+i8FMEfde+d4AiDvzEMy4Ed6zKC92YYBA5DEfaJopChAI95SSvXj7hyTUy04xqTQX970l7diuQs+C8Asc2Q==",
+  "dgSpecHash": "TSBFxkFrmufLWSqSJpNP4/qXaqQRQfWpIegKTMVBrdRW8EQUGXdGNj/SvslQoVkVK+ALEF74gTyfM/7jCghXog==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj",
+  "projectFilePath": "c:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Red\\.nuget\\packages\\microsoft.csharp\\4.4.1\\microsoft.csharp.4.4.1.nupkg.sha512",
     "C:\\Users\\Red\\.nuget\\packages\\netcoreserver\\5.0.12\\netcoreserver.5.0.12.nupkg.sha512",

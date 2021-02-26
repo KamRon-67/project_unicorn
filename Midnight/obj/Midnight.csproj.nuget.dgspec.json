@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj": {}
+    "c:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj": {
+    "c:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj",
+        "projectUniqueName": "c:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj",
         "projectName": "Midnight",
-        "projectPath": "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj",
+        "projectPath": "c:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj",
         "packagesPath": "C:\\Users\\Red\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\obj\\",
+        "outputPath": "c:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

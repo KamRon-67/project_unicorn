@@ -5882,11 +5882,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight.Tests\\Midnight.Tests.csproj",
+      "projectUniqueName": "c:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight.Tests\\Midnight.Tests.csproj",
       "projectName": "Midnight.Tests",
-      "projectPath": "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight.Tests\\Midnight.Tests.csproj",
+      "projectPath": "c:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight.Tests\\Midnight.Tests.csproj",
       "packagesPath": "C:\\Users\\Red\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight.Tests\\obj\\",
+      "outputPath": "c:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5906,8 +5906,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj": {
-              "projectPath": "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj"
+            "c:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj": {
+              "projectPath": "c:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj"
             }
           }
         }
