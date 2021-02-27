@@ -17,6 +17,7 @@ namespace Midnight.Core.Models
                     "--generate",
                     "can the current directory for a website and detect the content to process then run")
             };
+
             return rootCommand;
         }
     }

@@ -11,13 +11,13 @@ namespace Midnight
             // Create a root command with some options
             var rootCommand = RootCommandOptions.SetOptions();
 
-            rootCommand.Description = "My sample app";
+            rootCommand.Description = "Simple static site generator";
 
             // Note that the parameters of the handler method are matched according to the names of the options
-            rootCommand.Handler = CommandHandler.Create<string, string>((gallop, fly) =>
+            rootCommand.Handler = CommandHandler.Create<string, string>((create, generate) =>
              {
-                 Console.WriteLine($"The value for --gallop is: {gallop}");
-                 Console.WriteLine($"The value for --fly is: {fly}");
+                 Console.WriteLine($"The value for --create is: {create}");
+                 Console.WriteLine($"The value for --generate is: {generate}");
              });
 
             // Parse the incoming args and invoke the handler
