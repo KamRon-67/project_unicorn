@@ -22,9 +22,9 @@ namespace Midnight
                  Console.WriteLine($"The value for --create is: {create}");
                  Console.WriteLine($"The value for --generate is: {generate}");
 
+                 // HTTP server port
                  int port = 8080;
-                 if (args.Length > 0)
-                     port = int.Parse(args[0]);
+
                  // HTTP server content path
                  string www = "../../../../../www/api";
                  if (args.Length > 1)
@@ -47,7 +47,7 @@ namespace Midnight
 
                  Console.WriteLine("Press Enter to stop the server or '!' to restart the server...");
 
-                 // Perform text input
+                 //Perform text input
                  for (; ; )
                  {
                      string line = Console.ReadLine();
