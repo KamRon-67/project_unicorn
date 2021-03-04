@@ -26,9 +26,8 @@ namespace Midnight
                  int port = 8080;
 
                  // HTTP server content path
-                 string www = "../../../../../www/api";
-                 if (args.Length > 1)
-                     www = args[1];
+                 string www = "../../../www";
+
 
                  Console.WriteLine($"HTTP server port: {port}");
                  Console.WriteLine($"HTTP server static content path: {www}");

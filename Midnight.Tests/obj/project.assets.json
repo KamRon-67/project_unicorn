@@ -5882,11 +5882,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight.Tests\\Midnight.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight.Tests\\Midnight.Tests.csproj",
       "projectName": "Midnight.Tests",
-      "projectPath": "c:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight.Tests\\Midnight.Tests.csproj",
+      "projectPath": "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight.Tests\\Midnight.Tests.csproj",
       "packagesPath": "C:\\Users\\Red\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5906,8 +5906,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "c:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj": {
-              "projectPath": "c:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj"
+            "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj": {
+              "projectPath": "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj"
             }
           }
         }
@@ -5966,7 +5966,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

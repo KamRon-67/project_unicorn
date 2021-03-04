@@ -1,0 +1,93 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Midnight/1.0.0": {
+        "dependencies": {
+          "NetCoreServer": "5.0.12",
+          "System.CommandLine": "2.0.0-beta1.20574.7",
+          "YamlDotNet": "9.1.4"
+        },
+        "runtime": {
+          "Midnight.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.4.1": {},
+      "NetCoreServer/5.0.12": {
+        "runtime": {
+          "lib/net5.0/NetCoreServer.dll": {
+            "assemblyVersion": "5.0.12.0",
+            "fileVersion": "5.0.12.0"
+          }
+        }
+      },
+      "System.CommandLine/2.0.0-beta1.20574.7": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.1",
+          "System.Memory": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CommandLine.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.20.57407"
+          }
+        }
+      },
+      "System.Memory/4.5.4": {},
+      "YamlDotNet/9.1.4": {
+        "runtime": {
+          "lib/netstandard2.1/YamlDotNet.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.1.4.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Midnight/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.CSharp/4.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-A5hI3gk6WpcBI0QGZY6/d5CCaYUxJgi7iENn1uYEng+Olo8RfI5ReGVkjXjeu3VR3srLvVYREATXa2M0X7FYJA==",
+      "path": "microsoft.csharp/4.4.1",
+      "hashPath": "microsoft.csharp.4.4.1.nupkg.sha512"
+    },
+    "NetCoreServer/5.0.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9XIj0Oa6eQuAjFs5iLSTnxBOKV52tr+5dMfJl15ICG89i3G4ZwWcRozUCtvo5vDX1cM+Y4IdEDw5GrKaLpBpWQ==",
+      "path": "netcoreserver/5.0.12",
+      "hashPath": "netcoreserver.5.0.12.nupkg.sha512"
+    },
+    "System.CommandLine/2.0.0-beta1.20574.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fGqXtGd0UWyVTYRz5hU0fyjR1w7VlrdjmkdADreE9JXMzhWYgYJNxaHWVum40qJjtAT3RLlI0dBf37jmRBh43Q==",
+      "path": "system.commandline/2.0.0-beta1.20574.7",
+      "hashPath": "system.commandline.2.0.0-beta1.20574.7.nupkg.sha512"
+    },
+    "System.Memory/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
+    },
+    "YamlDotNet/9.1.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dVVZVhQxTI4xTNc9YorE+RruBFPPYKP44kMijE6Z5OQQE7zK+SEmh2sPm091CrTYVz1jjIuXKIBm1kFLrlsQJg==",
+      "path": "yamldotnet/9.1.4",
+      "hashPath": "yamldotnet.9.1.4.nupkg.sha512"
+    }
+  }
+}
