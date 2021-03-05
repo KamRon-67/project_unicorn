@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Midnight": {
+      "commandName": "Project",
+      "commandLineArgs": "--create \"127s6d\""
+    }
+  }
+}
