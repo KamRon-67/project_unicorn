@@ -142,6 +142,10 @@
               "target": "Package",
               "version": "[2.0.0-beta1.20574.7, )"
             },
+            "System.IO.Abstractions": {
+              "target": "Package",
+              "version": "[13.2.23, )"
+            },
             "YamlDotNet": {
               "target": "Package",
               "version": "[9.1.4, )"

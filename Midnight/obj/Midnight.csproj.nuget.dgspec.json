@@ -43,6 +43,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "DotLiquid": {
+              "target": "Package",
+              "version": "[2.0.395, )"
+            },
             "NetCoreServer": {
               "target": "Package",
               "version": "[5.0.12, )"
@@ -50,6 +54,10 @@
             "System.CommandLine": {
               "target": "Package",
               "version": "[2.0.0-beta1.20574.7, )"
+            },
+            "System.IO.Abstractions": {
+              "target": "Package",
+              "version": "[13.2.23, )"
             },
             "YamlDotNet": {
               "target": "Package",

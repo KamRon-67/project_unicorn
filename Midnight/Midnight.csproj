@@ -6,8 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="DotLiquid" Version="2.0.395" />
     <PackageReference Include="NetCoreServer" Version="5.0.12" />
     <PackageReference Include="System.CommandLine" Version="2.0.0-beta1.20574.7" />
+    <PackageReference Include="System.IO.Abstractions" Version="13.2.23" />
     <PackageReference Include="YamlDotNet" Version="9.1.4" />
   </ItemGroup>
 
