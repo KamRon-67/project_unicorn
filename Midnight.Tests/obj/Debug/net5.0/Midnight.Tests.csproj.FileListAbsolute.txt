@@ -111,3 +111,10 @@ c:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\r
 c:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\Midnight.deps.json
 c:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\Midnight.runtimeconfig.json
 c:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\Midnight.runtimeconfig.dev.json
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\Autofac.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\Autofac.Extras.Moq.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\Castle.Core.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\DotLiquid.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\Moq.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\System.IO.Abstractions.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\it\DotLiquid.resources.dll

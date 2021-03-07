@@ -134,6 +134,18 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Autofac.Extras.Moq": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "DotLiquid": {
+              "target": "Package",
+              "version": "[2.0.395, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
             "NetCoreServer": {
               "target": "Package",
               "version": "[5.0.12, )"

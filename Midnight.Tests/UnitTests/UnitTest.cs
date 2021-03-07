@@ -3,6 +3,8 @@ using Midnight.Core.Extensions;
 using Xunit;
 using FluentAssertions;
 using System.CommandLine;
+using Moq;
+using System.IO.Abstractions;
 
 namespace Midnight.Tests.UnitTests
 {
@@ -50,6 +52,16 @@ namespace Midnight.Tests.UnitTests
                 .Message
                 .Should()
                 .Be("Alias '--same' is already in use.");
+        }
+
+        [Fact]
+        public void Process()
+        {
+            var unicorn_engine_test_mock = new Mock<UnicornEngine>();
+
+            unicorn_engine_test_mock.Setup(mr => mr.Process(It.IsAny<IFileSystem>(), It.IsAny<string>()))
+                   .Verifiable();
+
         }
     }
 }

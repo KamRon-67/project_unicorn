@@ -18,3 +18,10 @@ C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\obj\Debug\net5.0\Midnigh
 C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\obj\Debug\net5.0\ref\Midnight.dll
 C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\obj\Debug\net5.0\Midnight.pdb
 C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\obj\Debug\net5.0\Midnight.genruntimeconfig.cache
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\Autofac.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\Autofac.Extras.Moq.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\Castle.Core.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\DotLiquid.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\Moq.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\System.IO.Abstractions.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\it\DotLiquid.resources.dll
