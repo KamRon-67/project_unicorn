@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.Abstractions;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -8,8 +9,22 @@ namespace Midnight.Core
 {
     public class TemplatingEngine
     {
-        public TemplatingEngine(string engine, string directory)
+        readonly IFileSystem fileSystem;
+
+        // <summary>Create MyComponent with the given fileSystem implementation</summary>
+        public TemplatingEngine(IFileSystem fileSystem)
         {
+            this.fileSystem = fileSystem;
+        }
+
+        public TemplatingEngine() : this(
+       fileSystem: new FileSystem())
+        {
+        }
+
+        public TemplatingEngine(IFileSystem fileSystem, string engine, string directory)
+        {
+            this.fileSystem = fileSystem;
             _engine = engine;
             _directory = directory;
         }
@@ -20,9 +35,10 @@ namespace Midnight.Core
         public string Create()
         {
             try
-            {
-                if (!Directory.Exists(_directory))
-                    Directory.CreateDirectory(_directory);
+            {// 
+             // !Directory.Exists(_directory)
+                if (!fileSystem.Directory.Exists(_directory))
+                    fileSystem.Directory.CreateDirectory(_directory);
 
                 if (string.Equals("Razor", _engine, StringComparison.InvariantCultureIgnoreCase))
                 {
@@ -31,44 +47,44 @@ namespace Midnight.Core
 
                 if (string.Equals("", _engine, StringComparison.InvariantCultureIgnoreCase))
                 {
-                    Directory.CreateDirectory(Path.Combine(_directory, @"_posts"));
-                    Directory.CreateDirectory(Path.Combine(_directory, @"_layouts"));
-                    Directory.CreateDirectory(Path.Combine(_directory, @"css"));
-                    Directory.CreateDirectory(Path.Combine(_directory, @"img"));
+                    fileSystem.Directory.CreateDirectory(fileSystem.Path.Combine(_directory, @"_posts"));
+                    fileSystem.Directory.CreateDirectory(fileSystem.Path.Combine(_directory, @"_layouts"));
+                    fileSystem.Directory.CreateDirectory(fileSystem.Path.Combine(_directory, @"css"));
+                    fileSystem.Directory.CreateDirectory(fileSystem.Path.Combine(_directory, @"img"));
 
-                    using (StreamWriter fs = new StreamWriter(Path.Combine(_directory, @"rss.xml"), false))
+                    using (var fs = new StreamWriter(fileSystem.Path.Combine(_directory, @"rss.xml"), false))
                     {
                     }
 
-                    using (StreamWriter fs = new StreamWriter(Path.Combine(_directory, @"atom.xml"), false))
+                    using (var fs = new StreamWriter(fileSystem.Path.Combine(_directory, @"atom.xml"), false))
                     {
                     }
 
-                    using (StreamWriter fs = new StreamWriter(Path.Combine(_directory, @"_layouts\layout.html"), false))
+                    using (var fs = new StreamWriter(fileSystem.Path.Combine(_directory, @"_layouts\layout.html"), false))
                     {
                     }
 
-                    using (StreamWriter fs = new StreamWriter(Path.Combine(_directory, @"_layouts\post.html"), false))
+                    using (var fs = new StreamWriter(fileSystem.Path.Combine(_directory, @"_layouts\post.html"), false))
                     {
                     }
 
-                    using (StreamWriter fs = new StreamWriter(Path.Combine(_directory, @"img\favicon.ico")))
+                    using (var fs = new StreamWriter(fileSystem.Path.Combine(_directory, @"img\favicon.ico")))
                     {
                     }
 
-                    using (StreamWriter fs = new StreamWriter(Path.Combine(_directory, @"index.md"), false))
+                    using (var fs = new StreamWriter(fileSystem.Path.Combine(_directory, @"index.md"), false))
                     {
                     }
 
-                    using (StreamWriter fs = new StreamWriter(Path.Combine(_directory, @"about.md"), false))
+                    using (var fs = new StreamWriter(fileSystem.Path.Combine(_directory, @"about.md"), false))
                     {
                     }
 
-                    using (StreamWriter fs = new StreamWriter(Path.Combine(_directory, string.Format(@"_posts\{0}-myfirstpost.md", DateTime.Today.ToString("yyyy-MM-dd"))), false))
+                    using (var fs = new StreamWriter(fileSystem.Path.Combine(_directory, string.Format(@"_posts\{0}-myfirstpost.md", DateTime.Today.ToString("yyyy-MM-dd"))), false))
                     {
                     }
 
-                    using (StreamWriter fs = new StreamWriter(Path.Combine(_directory, string.Format(@"css\style.css")), false))
+                    using (var fs = new StreamWriter(fileSystem.Path.Combine(_directory, string.Format(@"css\style.css")), false))
                     {
                     }
                 }
