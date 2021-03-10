@@ -8,5 +8,6 @@ namespace Midnight.Core.Extensions.Interfaces
 {
     public interface ITemplateEngine
     {
+        public string Create();
     }
 }

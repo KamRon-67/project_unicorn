@@ -4,7 +4,7 @@ using System.IO;
 
 namespace Midnight.Core.Extensions
 {
-    public class UnicornEngine : ITemplateEngine
+    public class UnicornEngine
     {
         public void Process(IFileSystem fileSystem, string folder)
         {
