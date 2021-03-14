@@ -47,6 +47,11 @@ namespace Midnight
             server.AddStaticContent(www, "/api");
 
             // Start the server
+            StartServer(server);
+        }
+
+        public static void StartServer(HttpCacheServer server)
+        {
             Console.Write("Server starting...");
             server.Start();
             Console.WriteLine("Done!");
