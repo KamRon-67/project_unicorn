@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Midnight.Core.Extensions
 {
-    public class FileSystem : IUnicornFileSystem
+    public class UnicornFileSystem : IUnicornFileSystem
     {
         public ServiceResult<IEnumerable<File>> GetFiles(string path)
         {

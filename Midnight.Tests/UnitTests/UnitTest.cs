@@ -53,15 +53,5 @@ namespace Midnight.Tests.UnitTests
                 .Should()
                 .Be("Alias '--same' is already in use.");
         }
-
-        [Fact]
-        public void Process()
-        {
-            var unicorn_engine_test_mock = new Mock<UnicornEngine>();
-
-            unicorn_engine_test_mock.Setup(mr => mr.Process(It.IsAny<IFileSystem>(), It.IsAny<string>()))
-                   .Verifiable();
-
-        }
     }
 }

@@ -1,8 +1,9 @@
 ﻿using System;
 using System.CommandLine;
 using System.CommandLine.Invocation;
+using System.Linq;
 using System.Net;
-using System.Threading.Tasks;
+using Midnight.Core.Extensions;
 using Midnight.Core.Models;
 using Midnight.Core.Server;
 
@@ -28,6 +29,24 @@ namespace Midnight
         {
             Console.WriteLine($"The value for --create is: {create}");
             Console.WriteLine($"The value for --generate is: {generate}");
+
+            if (create.IsSet())
+            {
+                var fileSystem = new UnicornFileSystem();
+                var result = fileSystem.GetFiles(create);
+                if (!result.Success)
+                {
+                    Console.WriteLine($"Error: {result.Error}");
+                    return;
+                }
+
+                result.Data.ToList().ForEach(x => Console.WriteLine($"Name: {x.Name}, Ectension: {x.Extension}, Directory: {x.Directory}"));
+            }
+
+            if (generate.IsSet())
+            {
+                create = "";
+            }
 
             // HTTP server port
             int port = 8080;

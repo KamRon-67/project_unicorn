@@ -1,5 +1,4 @@
-﻿using Midnight.Core.Extensions.Interfaces;
-using System.IO.Abstractions;
+﻿using System.IO.Abstractions;
 using System.IO;
 
 namespace Midnight.Core.Extensions
