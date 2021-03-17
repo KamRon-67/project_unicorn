@@ -1,6 +1,4 @@
-﻿using System.IO.Abstractions;
-using System.IO;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,7 +16,7 @@ namespace Midnight.Core.Extensions
 
         public UnicornEngine(IUnicornFileSystem fileSystem, string inputDir, string outputDir)
         {
-            this.fileProcessors = new List<IFileProcessor>();
+            fileProcessors = new List<IFileProcessor>();
 
             if (fileSystem == null)
                 throw new ArgumentException("File System not provided");
@@ -34,11 +32,11 @@ namespace Midnight.Core.Extensions
             unicornFileSystem = fileSystem;
         }
 
-        public void AddPrecessor(IFileProcessor processor) => fileProcessors.Add(processor);
+        public void AddProcessor(IFileProcessor processor) => fileProcessors.Add(processor);
 
         public async Task Generate()
         {
-            if (fileProcessors.Any())
+            if (!fileProcessors.Any())
                 throw new Exception("No processors added to generator.");
 
             var inputs = unicornFileSystem.GetFiles(inputDirectory);
@@ -64,20 +62,22 @@ namespace Midnight.Core.Extensions
                     outputFiles.Add(output);
                 }
             }
-        }
-            //return outputFiles.GroupBy(x => x.FullPath).Select(x => x.First());
-    }
 
-    private async Task<IEnumerable<OutputFile>> ProcessOutputs(IEnumerable<OutputFile> files)
-    {
-        foreach (var processor in this._fileProcessors)
+            // Grab unique values by path. TODO: Throw error if file conflict. 
+            return outputFiles.GroupBy(x => x.FullPath).Select(x => x.First());
+        }
+
+        private async Task<IEnumerable<OutputFile>> ProcessOutputs(IEnumerable<OutputFile> files)
         {
-            foreach (var file in files)
+            foreach (var processor in fileProcessors)
             {
-                await processor.ProcessOutputAsync(file);
+                foreach (var file in files)
+                {
+                    await processor.ProcessOutputAsync(file);
+                }
             }
-        }
 
-        return files;
+            return files;
+        }
     }
 }

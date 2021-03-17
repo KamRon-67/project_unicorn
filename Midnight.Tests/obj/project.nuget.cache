@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ixJYrwnvghEjwAN0/LTzZ0FkNwFhnsMScYBl1FJaqeYx35kvMjpaflDlFS9swnV9AKZfogh3I+s3GAkJpGFZFQ==",
+  "dgSpecHash": "4XP0IKo4Lely9wSVoymGuv6M8qIjRtL+RLlaNrYXWrrHK4GQ1g9zspRrMaawmIDlJsYg2fiGfa9gDD2Vi0/5xw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight.Tests\\Midnight.Tests.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\Red\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\Red\\.nuget\\packages\\dotliquid\\2.0.395\\dotliquid.2.0.395.nupkg.sha512",
     "C:\\Users\\Red\\.nuget\\packages\\fluentassertions\\5.10.3\\fluentassertions.5.10.3.nupkg.sha512",
+    "C:\\Users\\Red\\.nuget\\packages\\markdig\\0.23.0\\markdig.0.23.0.nupkg.sha512",
     "C:\\Users\\Red\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",
     "C:\\Users\\Red\\.nuget\\packages\\microsoft.csharp\\4.4.1\\microsoft.csharp.4.4.1.nupkg.sha512",
     "C:\\Users\\Red\\.nuget\\packages\\microsoft.net.test.sdk\\16.7.1\\microsoft.net.test.sdk.16.7.1.nupkg.sha512",

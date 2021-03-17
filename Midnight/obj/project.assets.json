@@ -63,6 +63,15 @@
           }
         }
       },
+      "Markdig/0.23.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Markdig.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Markdig.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.4.1": {
         "type": "package",
         "compile": {
@@ -1611,6 +1620,28 @@
         "lib/netstandard1.3/DotLiquid.xml",
         "lib/netstandard1.3/it/DotLiquid.resources.dll",
         "readme.txt"
+      ]
+    },
+    "Markdig/0.23.0": {
+      "sha512": "jPPcnHGSDSedPvwZ6jiMJpvK3iJGA2djU6TFmEr6XK2BiYK1ier2lTHVwDt41XLxDbfGu5Dn42hKDzwqs049PA==",
+      "type": "package",
+      "path": "markdig/0.23.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Markdig.dll",
+        "lib/net452/Markdig.xml",
+        "lib/netcoreapp2.1/Markdig.dll",
+        "lib/netcoreapp2.1/Markdig.xml",
+        "lib/netcoreapp3.1/Markdig.dll",
+        "lib/netcoreapp3.1/Markdig.xml",
+        "lib/netstandard2.0/Markdig.dll",
+        "lib/netstandard2.0/Markdig.xml",
+        "lib/netstandard2.1/Markdig.dll",
+        "lib/netstandard2.1/Markdig.xml",
+        "markdig.0.23.0.nupkg.sha512",
+        "markdig.nuspec",
+        "markdig.png"
       ]
     },
     "Microsoft.CSharp/4.4.1": {
@@ -5601,6 +5632,7 @@
     "net5.0": [
       "Autofac.Extras.Moq >= 6.0.0",
       "DotLiquid >= 2.0.395",
+      "Markdig >= 0.23.0",
       "Moq >= 4.16.1",
       "NetCoreServer >= 5.0.12",
       "System.CommandLine >= 2.0.0-beta1.20574.7",
@@ -5658,6 +5690,10 @@
           "DotLiquid": {
             "target": "Package",
             "version": "[2.0.395, )"
+          },
+          "Markdig": {
+            "target": "Package",
+            "version": "[0.23.0, )"
           },
           "Moq": {
             "target": "Package",

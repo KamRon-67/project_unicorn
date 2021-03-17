@@ -51,6 +51,10 @@
               "target": "Package",
               "version": "[2.0.395, )"
             },
+            "Markdig": {
+              "target": "Package",
+              "version": "[0.23.0, )"
+            },
             "Moq": {
               "target": "Package",
               "version": "[4.16.1, )"

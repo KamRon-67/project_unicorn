@@ -5,43 +5,67 @@ using System.Linq;
 using Midnight.Core.Extensions.Interfaces;
 using Midnight.Core.Features.Shared;
 using System.IO;
-using File = Midnight.Core.Features.FileSystem.File;
+using UnicornFile = Midnight.Core.Features.FileSystem.File;
 using System.Threading.Tasks;
+using Midnight.Core.Extensions.Models;
+using System.Text;
 
 namespace Midnight.Core.Extensions
 {
     public class UnicornFileSystem : IUnicornFileSystem
     {
-        public ServiceResult<IEnumerable<File>> GetFiles(string path)
+        public IEnumerable<InputFile> GetFiles(string path)
         {
-            try
-            {
-                var directory = new DirectoryInfo(path);
-                var files = directory.EnumerateFiles("*.*", SearchOption.AllDirectories).Select(this.MapFileInfoToFile);
-                return new ServiceResult<IEnumerable<File>> { Data = files };
-            }
+            var directory = new DirectoryInfo(path);
+            var files = directory.EnumerateFiles("*.*", SearchOption.AllDirectories).Select(x => this.MapFileInfoToInputFile(x, path));
+            return files;
+        }
 
-            catch(Exception e)
+        public async Task<string> ReadAllTextAsync(string path)
+        {
+            const int fileBufferSize = 4096;
+            using (var fileStream = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read, fileBufferSize, true))
+            using (var reader = new StreamReader(fileStream, Encoding.UTF8))
             {
-                return new ServiceResult<IEnumerable<File>>(e.Message);
+                return await reader.ReadToEndAsync().ConfigureAwait(false);
             }
         }
 
-        public async Task<ServiceResult<bool>> WriteFilesAsync(List<File> files)
+        public async Task WriteOutputFilesAsync(IEnumerable<OutputFile> files)
         {
-            return new ServiceResult<bool>();
+            foreach (var file in files)
+            {
+                await this.WriteOutputFileAsync(file);
+            }
         }
 
-
-        private File MapFileInfoToFile(FileInfo info)
+        public async Task WriteOutputFileAsync(OutputFile file)
         {
-            return new File()
+            Directory.CreateDirectory(file.FullDirectory);
+            using (var writer = File.CreateText(file.FullPath))
+            {
+                Console.WriteLine("Writing Output File : " + file.FullPath);
+                await writer.WriteLineAsync(file.Content).ConfigureAwait(false);
+            }
+        }
+
+        public Task DeleteDirectoryAsync(string path)
+        {
+            if (Directory.Exists(path))
+                Directory.Delete(path, recursive: true);
+            return Task.CompletedTask;
+        }
+
+        private InputFile MapFileInfoToInputFile(FileInfo info, string basePath)
+        {
+            return new InputFile()
             {
                 Name = Path.GetFileNameWithoutExtension(info.Name),
                 Extension = info.Extension,
-                Directory = info.DirectoryName
+                FullDirectory = info.DirectoryName,
+                FullPath = info.FullName,
+                RelativeDirectory = info.DirectoryName.Replace(basePath, "")
             };
         }
-        
     }
 }

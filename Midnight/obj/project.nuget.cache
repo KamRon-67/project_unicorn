@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tG85boU6z0JULnXExuNH94g5QGKxgTbVvHCBXpqmXqBWSLIxXDDN0hjHG7LgkzV/LjvzgYDbSTsdcMBD6/8rDg==",
+  "dgSpecHash": "EOZLUFzxWcZGLvv/02ShcrIPCzwm10tx4Jc6Bbnz5YCMRUdoXKv4R13PhhiBr2p8z/qBAh1k0V5BUvsKcaMwHg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Red\\Documents\\code\\c#\\project_unicorn\\Midnight\\Midnight.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Red\\.nuget\\packages\\autofac.extras.moq\\6.0.0\\autofac.extras.moq.6.0.0.nupkg.sha512",
     "C:\\Users\\Red\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\Red\\.nuget\\packages\\dotliquid\\2.0.395\\dotliquid.2.0.395.nupkg.sha512",
+    "C:\\Users\\Red\\.nuget\\packages\\markdig\\0.23.0\\markdig.0.23.0.nupkg.sha512",
     "C:\\Users\\Red\\.nuget\\packages\\microsoft.csharp\\4.4.1\\microsoft.csharp.4.4.1.nupkg.sha512",
     "C:\\Users\\Red\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\Red\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
