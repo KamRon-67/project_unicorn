@@ -3,6 +3,7 @@ using System.CommandLine;
 using System.CommandLine.Invocation;
 using System.Linq;
 using System.Net;
+using System.Threading.Tasks;
 using Midnight.Core.Extensions;
 using Midnight.Core.Models;
 using Midnight.Core.Server;
@@ -11,7 +12,7 @@ namespace Midnight
 {
     class Midnight
     {
-        static int Main(string[] args)
+        static async Task<int> Main(string[] args)
         {
             // Create a root command with some options
             var rootCommand = RootCommandOptions.SetOptions();

@@ -2,7 +2,7 @@
   "profiles": {
     "Midnight": {
       "commandName": "Project",
-      "commandLineArgs": "--create \"C:\\path\\to\\folder\""
+      "commandLineArgs": "--create \"C:\\Test\""
     }
   }
 }
