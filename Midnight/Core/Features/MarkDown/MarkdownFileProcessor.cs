@@ -8,7 +8,7 @@ using Midnight.Core.Extensions.Models;
 
 namespace Midnight.Core.Features.MarkDown
 {
-    public class MarkdownFileProcessor : IUnicornFileSystem
+    public class MarkdownFileProcessor: IFileProcessor
     {
         private IUnicornFileSystem _fileSystem;
 

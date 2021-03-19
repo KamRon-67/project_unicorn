@@ -89,6 +89,14 @@
           }
         }
       },
+      "Markdig/0.23.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Markdig.dll": {
+            "assemblyVersion": "0.23.0.0",
+            "fileVersion": "0.23.0.0"
+          }
+        }
+      },
       "Microsoft.CodeCoverage/16.7.1": {
         "runtime": {
           "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -1299,6 +1307,7 @@
         "dependencies": {
           "Autofac.Extras.Moq": "6.0.0",
           "DotLiquid": "2.0.395",
+          "Markdig": "0.23.0",
           "Moq": "4.16.1",
           "NetCoreServer": "5.0.12",
           "System.CommandLine": "2.0.0-beta1.20574.7",
@@ -1358,6 +1367,13 @@
       "sha512": "sha512-gVPEVp1hLVqcv+7Q2wiDf7kqCNn7+bQcQ0jbJ2mcRT6CeRoZl1tNkqvzSIhvekyldDptk77j1b03MXTTRIqqpg==",
       "path": "fluentassertions/5.10.3",
       "hashPath": "fluentassertions.5.10.3.nupkg.sha512"
+    },
+    "Markdig/0.23.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jPPcnHGSDSedPvwZ6jiMJpvK3iJGA2djU6TFmEr6XK2BiYK1ier2lTHVwDt41XLxDbfGu5Dn42hKDzwqs049PA==",
+      "path": "markdig/0.23.0",
+      "hashPath": "markdig.0.23.0.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/16.7.1": {
       "type": "package",

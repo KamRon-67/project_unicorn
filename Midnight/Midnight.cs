@@ -35,13 +35,8 @@ namespace Midnight
             {
                 var fileSystem = new UnicornFileSystem();
                 var result = fileSystem.GetFiles(create);
-                if (!result.Success)
-                {
-                    Console.WriteLine($"Error: {result.Error}");
-                    return;
-                }
+                
 
-                result.Data.ToList().ForEach(x => Console.WriteLine($"Name: {x.Name}, Ectension: {x.Extension}, Directory: {x.Directory}"));
             }
 
             if (generate.IsSet())

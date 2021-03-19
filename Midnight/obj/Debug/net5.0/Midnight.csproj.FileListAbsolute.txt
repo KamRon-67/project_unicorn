@@ -25,3 +25,4 @@ C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\DotLiqu
 C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\Moq.dll
 C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\System.IO.Abstractions.dll
 C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\it\DotLiquid.resources.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight\bin\Debug\net5.0\Markdig.dll
