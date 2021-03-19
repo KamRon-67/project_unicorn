@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO.Abstractions;
 using System.Linq;
 using Midnight.Core.Extensions.Interfaces;
-using Midnight.Core.Features.Shared;
 using System.IO;
-using UnicornFile = Midnight.Core.Features.FileSystem.File;
 using System.Threading.Tasks;
 using Midnight.Core.Extensions.Models;
 using System.Text;
@@ -17,7 +14,7 @@ namespace Midnight.Core.Extensions
         public IEnumerable<InputFile> GetFiles(string path)
         {
             var directory = new DirectoryInfo(path);
-            var files = directory.EnumerateFiles("*.*", SearchOption.AllDirectories).Select(x => this.MapFileInfoToInputFile(x, path));
+            var files = directory.EnumerateFiles("*.*", SearchOption.AllDirectories).Select(x => MapFileInfoToInputFile(x, path));
             return files;
         }
 
