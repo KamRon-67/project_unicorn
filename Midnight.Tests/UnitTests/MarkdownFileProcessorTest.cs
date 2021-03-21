@@ -7,6 +7,8 @@ using Moq;
 using System.Collections.Generic;
 using Midnight.Core.Extensions.Models;
 using Midnight.Core.Extensions.Interfaces;
+using System.IO;
+using System.Reflection;
 
 namespace Midnight.Tests.UnitTests
 {
@@ -17,12 +19,13 @@ namespace Midnight.Tests.UnitTests
         {
             //Arrange
             var fileSystem = new UnicornFileSystem();
+            var dir = Directory.GetCurrentDirectory();
 
             //Act
-            var result = fileSystem.GetFiles(@"");
+            var result = fileSystem.GetFiles(dir);
 
             //Assert
-            result.Should().BeEmpty().And.HaveCount(0);
+            result.Should().NotBeEmpty();
         }
     }
 }
