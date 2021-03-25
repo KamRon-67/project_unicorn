@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac.Extras.Moq" Version="6.0.0" />
+    <PackageReference Include="AutoFixture" Version="4.15.0" />
     <PackageReference Include="DotLiquid" Version="2.0.395" />
     <PackageReference Include="Markdig" Version="0.23.0" />
     <PackageReference Include="Moq" Version="4.16.1" />
