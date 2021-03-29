@@ -119,3 +119,5 @@ C:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\M
 C:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\System.IO.Abstractions.dll
 C:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\it\DotLiquid.resources.dll
 C:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\Markdig.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\AutoFixture.dll
+C:\Users\Red\Documents\code\c#\project_unicorn\Midnight.Tests\bin\Debug\net5.0\Fare.dll

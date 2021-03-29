@@ -41,8 +41,8 @@ namespace Midnight.Core.Extensions
 
             var inputs = unicornFileSystem.GetFiles(inputDirectory);
 
-            var outputFiles = await this.ProcessInputs(inputs, outputDirectory);
-            outputFiles = await this.ProcessOutputs(outputFiles);
+            var outputFiles = await ProcessInputs(inputs, outputDirectory);
+            outputFiles = await ProcessOutputs(outputFiles);
 
             await unicornFileSystem.WriteOutputFilesAsync(outputFiles);
         }

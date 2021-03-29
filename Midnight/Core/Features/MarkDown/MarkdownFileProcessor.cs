@@ -22,7 +22,7 @@ namespace Midnight.Core.Features.MarkDown
             if (!file.Extension.ToLower().Equals(".md"))
                 return (false, null);
 
-            var markdown = await this._fileSystem.ReadAllTextAsync(file.FullPath);
+            var markdown = await _fileSystem.ReadAllTextAsync(file.FullPath);
             if (!markdown.IsSet())
                 return (false, null);
 

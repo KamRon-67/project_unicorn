@@ -11,6 +11,7 @@ using System.IO;
 using System.IO.Abstractions;
 using AutoFixture;
 using System.Threading.Tasks;
+using Midnight.Core.Features.MarkDown;
 
 namespace Midnight.Tests.UnitTests
 {
@@ -18,6 +19,7 @@ namespace Midnight.Tests.UnitTests
     {
         readonly Mock<IUnicornFileSystem> _fileSystem;
         readonly Fixture _fixture;
+        readonly MarkdownFileProcessor _markdownFileProcessor;
 
         public MarkdownFileProcessorTest()
         {
@@ -28,25 +30,27 @@ namespace Midnight.Tests.UnitTests
             _fileSystem.Setup(f => f.WriteOutputFilesAsync(It.IsAny<IEnumerable<OutputFile>>())).Returns(Task.CompletedTask as Task);
             _fileSystem.Setup(f => f.WriteOutputFileAsync(It.IsAny<OutputFile>())).Returns(Task.CompletedTask as Task);
 
+            _markdownFileProcessor = new MarkdownFileProcessor(_fileSystem.Object);
         }
 
+        
         [Fact]
-        public void testGetFilesEmptyFolder()
+        public async Task TestProcessInputExtensionFirstIfAsync()
         {
             //Arrange
-            var fileSystem = new UnicornFileSystem();
-            var dir = Directory.GetCurrentDirectory();
+            var inputFile = new InputFile
+            {
+                Extension = ".m"
+            };
 
-            //Act
-            var result = fileSystem.GetFiles(dir);
+            var markdownFileProcessor = new MarkdownFileProcessor(_fileSystem.Object);
 
-            //Assert
-            result.Should().NotBeEmpty();
-        }
+            //act
+            var (processed, file) = await markdownFileProcessor.ProcessInputAsync(inputFile, inputFile.Extension);
 
-        public void testProcessInputAsync()
-        {
-            //Arrange
+            //assert
+            processed.Should().BeFalse();
+            file.Should().BeNull();
         }
     }
 }

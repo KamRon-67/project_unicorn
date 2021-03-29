@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "Midnight/1.0.0": {
         "dependencies": {
+          "AutoFixture": "4.15.0",
           "Autofac.Extras.Moq": "6.0.0",
           "DotLiquid": "2.0.395",
           "Markdig": "0.23.0",
@@ -45,6 +46,18 @@
           }
         }
       },
+      "AutoFixture/4.15.0": {
+        "dependencies": {
+          "Fare": "2.1.1",
+          "System.ComponentModel.Annotations": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoFixture.dll": {
+            "assemblyVersion": "4.15.0.0",
+            "fileVersion": "4.15.0.623"
+          }
+        }
+      },
       "Castle.Core/4.4.0": {
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -75,6 +88,17 @@
         "resources": {
           "lib/netstandard1.3/it/DotLiquid.resources.dll": {
             "locale": "it"
+          }
+        }
+      },
+      "Fare/2.1.1": {
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Fare.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.1.0"
           }
         }
       },
@@ -283,6 +307,21 @@
       "System.ComponentModel/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
+        }
+      },
+      "System.ComponentModel.Annotations/4.3.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.ComponentModel": "4.3.0",
+          "System.Globalization": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Resources.ResourceManager": "4.3.0",
+          "System.Runtime": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0"
         }
       },
       "System.ComponentModel.Primitives/4.3.0": {
@@ -923,6 +962,13 @@
       "path": "autofac.extras.moq/6.0.0",
       "hashPath": "autofac.extras.moq.6.0.0.nupkg.sha512"
     },
+    "AutoFixture/4.15.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TZTWBoxqCHKYob3//v5MaWuGj6rF6rLsD1V0ta20gQpzulnjT4oTnMIy05/Y5VKtyZ1D3VqcokOKMq27lWEpuQ==",
+      "path": "autofixture/4.15.0",
+      "hashPath": "autofixture.4.15.0.nupkg.sha512"
+    },
     "Castle.Core/4.4.0": {
       "type": "package",
       "serviceable": true,
@@ -936,6 +982,13 @@
       "sha512": "sha512-lzj+xVCSZaSlYRMKB+gHbzoF6Mz6OAWYbdndztRh9wjQXkVOdirYOXmdA/dUv2eeAIaPM28qm9fClRyJYdWUwA==",
       "path": "dotliquid/2.0.395",
       "hashPath": "dotliquid.2.0.395.nupkg.sha512"
+    },
+    "Fare/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HaI8puqA66YU7/9cK4Sgbs1taUTP1Ssa4QT2PIzqJ7GvAbN1QgkjbRsjH+FSbMh1MJdvS0CIwQNLtFT+KF6KpA==",
+      "path": "fare/2.1.1",
+      "hashPath": "fare.2.1.1.nupkg.sha512"
     },
     "Markdig/0.23.0": {
       "type": "package",
@@ -1160,6 +1213,13 @@
       "sha512": "sha512-VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
       "path": "system.componentmodel/4.3.0",
       "hashPath": "system.componentmodel.4.3.0.nupkg.sha512"
+    },
+    "System.ComponentModel.Annotations/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SY2RLItHt43rd8J9D8M8e8NM4m+9WLN2uUd9G0n1I4hj/7w+v3pzK6ZBjexlG1/2xvLKQsqir3UGVSyBTXMLWA==",
+      "path": "system.componentmodel.annotations/4.3.0",
+      "hashPath": "system.componentmodel.annotations.4.3.0.nupkg.sha512"
     },
     "System.ComponentModel.Primitives/4.3.0": {
       "type": "package",
