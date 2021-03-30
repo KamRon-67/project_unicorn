@@ -2,6 +2,7 @@
 using Xunit;
 using FluentAssertions;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace Midnight.Tests.UnitTests
 {
@@ -20,5 +21,28 @@ namespace Midnight.Tests.UnitTests
             //Assert
             result.Should().NotBeEmpty();
         }
+
+        [Fact]
+        public async Task TestReadAllTextAsync()
+        {
+            //Arrange
+            string path = Path.GetTempFileName();
+            var fi1 = new FileInfo(path);
+
+            // Create a file to write to.
+            using (StreamWriter sw = fi1.CreateText())
+            {
+                sw.WriteLine("Hello");
+            }
+
+            var fileSystem = new UnicornFileSystem();
+
+            //Act
+            var result = await fileSystem.ReadAllTextAsync(path);
+           
+
+            //Assert
+            result.Should().NotBeNullOrEmpty("Hello");
+            }
     }
 }

@@ -52,5 +52,26 @@ namespace Midnight.Tests.UnitTests
             processed.Should().BeFalse();
             file.Should().BeNull();
         }
+
+        [Fact]
+        public async Task TestProcessInputExtensionSecondIfAsync()
+        {
+            //Arrange
+            var inputFile = new InputFile
+            {
+                Extension = ".md",
+                FullDirectory = ""
+               
+            };
+
+            var markdownFileProcessor = new MarkdownFileProcessor(_fileSystem.Object);
+
+            //act
+            var (processed, file) = await markdownFileProcessor.ProcessInputAsync(inputFile, inputFile.Extension);
+
+            //assert
+            processed.Should().BeFalse();
+            file.Should().BeNull();
+        }
     }
 }

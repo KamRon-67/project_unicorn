@@ -35,8 +35,6 @@ namespace Midnight
             {
                 var fileSystem = new UnicornFileSystem();
                 var result = fileSystem.GetFiles(create);
-                
-
             }
 
             if (generate.IsSet())
