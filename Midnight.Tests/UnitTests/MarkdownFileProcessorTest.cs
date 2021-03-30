@@ -57,14 +57,25 @@ namespace Midnight.Tests.UnitTests
         public async Task TestProcessInputExtensionSecondIfAsync()
         {
             //Arrange
+            string path = Path.GetTempFileName();
+            var fi1 = new FileInfo(path);
+
+            // Create a file to write to.
+            using (StreamWriter sw = fi1.CreateText())
+            {
+                sw.WriteLine(" ");
+            }
+
             var inputFile = new InputFile
             {
                 Extension = ".md",
-                FullDirectory = ""
+                FullPath = path
                
             };
 
-            var markdownFileProcessor = new MarkdownFileProcessor(_fileSystem.Object);
+            var fileSystem = new UnicornFileSystem();
+
+            var markdownFileProcessor = new MarkdownFileProcessor(fileSystem);
 
             //act
             var (processed, file) = await markdownFileProcessor.ProcessInputAsync(inputFile, inputFile.Extension);
