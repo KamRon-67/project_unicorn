@@ -3,6 +3,7 @@ using Xunit;
 using FluentAssertions;
 using System.IO;
 using System.Threading.Tasks;
+using Midnight.Core.Extensions.Models;
 
 namespace Midnight.Tests.UnitTests
 {
@@ -39,10 +40,33 @@ namespace Midnight.Tests.UnitTests
 
             //Act
             var result = await fileSystem.ReadAllTextAsync(path);
-           
+
 
             //Assert
             result.Should().NotBeNullOrEmpty("Hello");
-            }
+        }
+
+
+        [Fact]
+        public async Task TestWriteOutputFileAsync()
+        {
+            //Arrange
+            var outputFile =  new OutputFile 
+            { 
+                FullDirectory = Path.GetTempFileName(),
+                FullPath = Path.GetTempFileName(),
+                Content = "Test1"
+            };
+
+            var fileSystem = new UnicornFileSystem();
+
+            //Act
+            var result = fileSystem.WriteOutputFileAsync(outputFile);
+
+            FileInfo fileInfo = new FileInfo(outputFile.FullPath);
+
+            //Assert
+            fileInfo.Exists.Should().BeTrue();
+        }
     }
 }
