@@ -8,7 +8,6 @@ using System.Collections.Generic;
 using Midnight.Core.Extensions.Models;
 using Midnight.Core.Extensions.Interfaces;
 using System.IO;
-using System.IO.Abstractions;
 using AutoFixture;
 using System.Threading.Tasks;
 using Midnight.Core.Features.MarkDown;
@@ -34,13 +33,18 @@ namespace Midnight.Tests.UnitTests
         }
 
         
-        [Fact]
-        public async Task TestProcessInputExtensionFirstIfAsync()
+        [Theory]
+        [InlineData(".m")]
+        [InlineData(".txt")]
+        [InlineData(".doc")]
+        [InlineData(".xls")]
+        [InlineData(".jpg")]
+        public async Task ReturnsEmptyTupleGivenNonMarkdownFileExtension(string extension)
         {
             //Arrange
             var inputFile = new InputFile
             {
-                Extension = ".m"
+                Extension = extension
             };
 
             var markdownFileProcessor = new MarkdownFileProcessor(_fileSystem.Object);

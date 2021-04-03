@@ -13,7 +13,7 @@ namespace Midnight.Tests.UnitTests
     public class UnicornEngineTest
     {
         [Fact]
-        public void UnicornEngineThrowException()
+        public void ThrowsExceptionGivenNullArguments()
         {
             //Arrange
             Action testUnicornEngine = () => { _ = new UnicornEngine(null, null, null); };
@@ -24,6 +24,16 @@ namespace Midnight.Tests.UnitTests
 
             // Assert
             Assert.IsType<ArgumentException>(ex);
+        }
+
+        [Fact]
+        public void SucceedsGivenExpectedArguments()
+        {
+            //Act
+            var engine = new UnicornEngine(new Mock<IUnicornFileSystem>().Object, "/", "/");
+
+            //Assert
+            Assert.IsType<UnicornEngine>(engine);
         }
     }
 }
