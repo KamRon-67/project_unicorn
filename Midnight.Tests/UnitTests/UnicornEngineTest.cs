@@ -1,9 +1,5 @@
 ﻿using Midnight.Core.Extensions;
 using Xunit;
-using FluentAssertions;
-using Midnight.Core.Extensions.Models;
-using System.Threading.Tasks;
-using System.Collections.Generic;
 using Midnight.Core.Extensions.Interfaces;
 using System;
 using Moq;

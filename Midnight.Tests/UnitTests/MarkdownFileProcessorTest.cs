@@ -17,18 +17,11 @@ namespace Midnight.Tests.UnitTests
     public class MarkdownFileProcessorTest
     {
         readonly Mock<IUnicornFileSystem> _fileSystem;
-        readonly Fixture _fixture;
         readonly MarkdownFileProcessor _markdownFileProcessor;
 
         public MarkdownFileProcessorTest()
         {
-            _fixture = new Fixture();
             _fileSystem = new Mock<IUnicornFileSystem>();
-            _fileSystem.Setup(f => f.GetFiles(It.IsAny<String>())).Verifiable();
-            _fileSystem.Setup(f => f.ReadAllTextAsync(It.IsAny<string>())).Returns(Task.CompletedTask as Task<string>);
-            _fileSystem.Setup(f => f.WriteOutputFilesAsync(It.IsAny<IEnumerable<OutputFile>>())).Returns(Task.CompletedTask as Task);
-            _fileSystem.Setup(f => f.WriteOutputFileAsync(It.IsAny<OutputFile>())).Returns(Task.CompletedTask as Task);
-
             _markdownFileProcessor = new MarkdownFileProcessor(_fileSystem.Object);
         }
 
