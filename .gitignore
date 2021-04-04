@@ -72,3 +72,14 @@ $RECYCLE.BIN/
 *.cache
 *.v2
 .vs/project_unicorn/v16/.suo
+Midnight.Tests/bin/Debug/net5.0/Midnight.pdb
+Midnight.Tests/bin/Debug/net5.0/Midnight.Tests.pdb
+Midnight.Tests/bin/Debug/net5.0/ref/Midnight.Tests.dll
+Midnight.Tests/obj/Debug/net5.0/Midnight.Tests.csprojAssemblyReference.cache
+Midnight.Tests/obj/Debug/net5.0/Midnight.Tests.dll
+Midnight.Tests/obj/Debug/net5.0/Midnight.Tests.pdb
+Midnight.Tests/obj/Debug/net5.0/ref/Midnight.Tests.dll
+Midnight/bin/Debug/net5.0/Midnight.dll
+Midnight/bin/Debug/net5.0/Midnight.pdb
+Midnight/obj/Debug/net5.0/Midnight.dll
+Midnight/obj/Debug/net5.0/Midnight.pdb
