@@ -25,4 +25,8 @@
     <ProjectReference Include="..\Midnight\Midnight.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="UnitTests\" />
+  </ItemGroup>
+
 </Project>
